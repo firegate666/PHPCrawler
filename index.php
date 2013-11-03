@@ -1,7 +1,7 @@
 <?php
 $download_base = __DIR__ . '/download/';
 
-function __autoLoad($class_name) {
+function __autoload($class_name) {
 	$filename = __DIR__ . '/' . $class_name . '.php';
 	if (file_exists($filename)) {
 		require_once $filename;
